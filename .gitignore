@@ -1,0 +1,15 @@
+# Operating System
+.DS_Store
+
+# Text Editor
+*.sublime-workspace
+*.sublime-project
+
+# General Files
+*.log
+*.tmp
+
+# Design Tools
+*.CR2
+*.psd
+*.xmp

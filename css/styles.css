@@ -1,0 +1,107 @@
+/* Global Styles */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-text: #000000;
+  --radius-media: 8px;
+  --size-font: 1rem;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 3rem;
+}
+
+/* Type Selectors */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-size: var(--size-font);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 3rem);
+  text-transform: uppercase;
+}
+
+main {
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-media);
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin: 0;
+}
+
+figcaption h3 {
+  margin: 0;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+}
+
+figcaption p {
+  opacity: 0.75;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* Pseudo-Class Selectors */
+a:hover {
+  opacity: 0.5;
+}
+
+/* Class Selectors */
+.content-wrap {
+  width: min(90%, 768px);
+  margin: 0 auto;
+  padding: var(--space-3) 0;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list a {
+  display: inline-block;
+  padding: var(--space-2);
+  font-size: 1.5rem;
+}
